@@ -1,13 +1,18 @@
 <template id="header">
   <a class="navbar-brand" href="#"> {{owner}}</a>
+
   <!-- Rest of template DOM -->
 </template>
 
 <script>
   Vue.component('header-component', {
     data() {
-      return { owner: 'Danel' }
+      return {
+        owner: 'Danel',
+
+      }
     },
     template: document.currentScript.ownerDocument.querySelector('#header').innerHTML
   })
+
 </script>
